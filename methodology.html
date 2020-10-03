@@ -75,10 +75,10 @@
     <script src="./simple_statistics.js?cachebust-d48c98f031"></script>
 
     <!-- Sitewide styles and code; more for additional pages, will be included below -->
-    <link rel="stylesheet" href="./sitewide.css?cachebust-b2ff84c5cd" />
-    <script src="./sitewide.js?cachebust-461b019a63"></script>
-    <link rel="stylesheet" href="./methodology.css?cachebust-a7fc4f991f" />
-    <script src="./methodology.js?cachebust-681fad034e"></script>
+    <link rel="stylesheet" href="./sitewide.css?cachebust-b40954767c" />
+    <script src="./sitewide.js?cachebust-c411288d35"></script>
+    <link rel="stylesheet" href="./methodology.css?cachebust-8be1f32d75" />
+    <script src="./methodology.js?cachebust-2c6e36a8e3"></script>
 </head>
 <body>
 
@@ -134,7 +134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <h2 id="suitable-areas">Suitable Areas</h3>
       <p>
-        We identified all areas that were potentially suitable for hosting a site. We created a grid made up of 0.5 mile cells covering the entire county, where each cell is a potential area to host a site. These ‚Äúsuitable areas‚Äù were determined using a combined approach for road density and ‚Äúpoints of interest‚Äù density. A suitable area needed to contain either a sufficient density of roads or at least two points of interest, while also avoiding bodies of water. This means that suitable areas are areas that have some concentration of activity and therefore are more likely to have buildings and infrastructure. Note that we are not suggesting that all points of interest are suitable sites to host a Voter Service and Polling Center, but that the presence of a point of interest suggests a general concentration of infrastructure.
+        We identified all areas that were potentially suitable for hosting a site. We created a grid made up of 0.5 mile cells covering the entire county, where each cell is a potential area to host a site. These ìsuitable areasî were determined using a combined approach for road density and ìpoints of interestî density. A suitable area needed to contain either a sufficient density of roads or at least two points of interest, while also avoiding bodies of water. This means that suitable areas are areas that have some concentration of activity and therefore are more likely to have buildings and infrastructure. Note that we are not suggesting that all points of interest are suitable sites to host a Voter Service and Polling Center, but that the presence of a point of interest suggests a general concentration of infrastructure.
       </p>
       <p>
         Points of interest were sourced from OpenStreetMap and were defined by the research team to be both governmental and non-governmental buildings (shown as two different layers in the tool) that could serve as potential Voter Service and Polling Center or drop box sites.
@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         Michigan law allows county election officials the ability to choose the number of voting location and drop box sites for their jurisdiction. To generate suggested locations based on the number of sites each county has publically reported, we used a k-means model and a series of facility location models.
       </p>
       <p>
-        First we conducted a k-means cluster analysis to aggregate populated census block sites into a smaller number of computationally manageable geographic clusters. These clusters were created by clustering on latitude/longitude. Next we estimated travel time from every census block cluster to every potential area for a voting location (defined by the ‚Äúsuitable areas‚Äù grid).
+        First we conducted a k-means cluster analysis to aggregate populated census block sites into a smaller number of computationally manageable geographic clusters. These clusters were created by clustering on latitude/longitude. Next we estimated travel time from every census block cluster to every potential area for a voting location (defined by the ìsuitable areasî grid).
       </p>
       <p>
         We then used a facility location model to determine optimal locations. The inputs our facility location model used were: the cost of site creation (which included the area score and the presence of points of interest), the travel time to neighboring sites, and the estimated capacity of the site.
@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><i>Data sources</i>: Catalist voter registration data (2012 General Election, 2014 General Election, 2016 General Election); American Community Survey 5-Year Estimate (2014-2018); Census 2010.</li>
         <li><i>Calculation</i>: Convert voter data to the tract level and average voter registration totals for 2012-2016. Subtract the average number of registered voters from the citizen voting age population (CVAP). Divide by the total CVAP estimate in the tract. Where the incarcerated population is over 25% of the CVAP, use the 2010 Census estimate for non-institutionalized populations instead of CVAP.</li>
         <li><i>Scale</i>: Census Tract</li>
-        <li><i>Rationale</i>: Voting location/drop off should be proximal to communities of eligible voters who aren‚Äôt registered to vote.</li>
+        <li><i>Rationale</i>: Voting location/drop off should be proximal to communities of eligible voters who arenít registered to vote.</li>
         <li><i>Limitations</i>: Imperfect conversion of precinct to tract level. The 2010 Census is the most recent estimate for incarcerated and non-institutionalized populations at the tract level.</li>
       </ul>
 
@@ -237,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p id="limitedenglish"><b>Percent Limited English Proficient Population:</b> The percentage of the population that has limited English proficiency.</p>
       <ul>
         <li><i>Data sources</i>: American Community Survey 5-Year Estimate (2011-2015), Table B16001.</li>
-        <li><i>Calculation</i>: The percent of the population with limited English proficiency in a census tract. Limited English proficiency is defined as people who speak English ‚Äúless than very well‚Äù.</li>
+        <li><i>Calculation</i>: The percent of the population with limited English proficiency in a census tract. Limited English proficiency is defined as people who speak English ìless than very wellî.</li>
         <li><i>Scale</i>: Census Tract</li>
         <li><i>Rationale</i>: Voting location/drop off should be proximal to language minority communities.</li>
         <li><i>Limitations</i>: Data shows where people live, not where they work. At the time of publication the 2012-2016 data had not yet been released.</li>

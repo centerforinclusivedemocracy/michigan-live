@@ -104,7 +104,7 @@ def createJoinedPages():
             for filename in infiles_html:
                 filename = os.path.join('src', filename)
                 print("    {}".format(filename))
-                with open(filename) as infile:
+                with open(filename, encoding = 'utf-8') as infile:
                     outfile.write(infile.read())
 
         with open(outfilename_js, 'w') as outfile:
@@ -145,9 +145,9 @@ def createCacheBusting():
         cachetags = re.findall('(([\w\.]+)\?CACHEBUST)', html)
         for tag in cachetags:
             targetfilename = os.path.join('.', tag[1])
-            with open(targetfilename) as targetfile:
+            with open(targetfilename, encoding = 'utf-8') as targetfile:
                 targetcontent = targetfile.read()
-                cachebuster = 'cachebust-' + hashlib.sha256(targetcontent).hexdigest()[:10]  # this changes only if the file content has changed, NOT counting cache-buster tags            
+                cachebuster = 'cachebust-' + hashlib.sha256(targetcontent.encode('utf-8')).hexdigest()[:10]  # this changes only if the file content has changed, NOT counting cache-buster tags            
                 oldtag = tag[0]
                 newtag = tag[0].replace('CACHEBUST', cachebuster)
                 html = html.replace(oldtag, newtag)
