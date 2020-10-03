@@ -1,0 +1,4 @@
+idnum,lon,lat,dens.cvap.std,dens.work.std,popDens.std,prc.CarAccess.std,prc.ElNonReg.std,prc.disabled.std,prc.latino.std,prc.nonEngProf.std,prc.pov.std,prc.youth.std,rate.vbm.std,dens.poll.std,center_score,droppoff_score
+463,-87.24893,46.07181,0.02414,0.0,0.64927,0.15974,0.0,0.49077,0.0,0.50284,0.02201,0.00035,0.92829,0.56195,0.50892,0.54137
+466,-87.61095,46.06949,0.02414,0.0,0.0,0.15974,0.0,0.49077,0.0,0.50284,0.02201,0.00035,0.84487,0.30369,0.33562,0.35615
+5524,-88.10719,46.53002,0.1924,0.0,0.0,0.87061,0.0,0.69791,0.6333,0.10437,0.61519,0.16028,0.41108,0.7689,0.4397,0.44797
