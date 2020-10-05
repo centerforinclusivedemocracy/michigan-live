@@ -6,41 +6,41 @@
 // outoforder = optional message to display in top-left of county page, indicating that this county data are questionable
 // exceptlayers = skip these layers when loading the data profile, for counties to opt-out from individual layers
 const PARTICIPATING_COUNTIES = [
-  { countyfp: "005", name: "Allegan", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "015", name: "Barry", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "017", name: "Bay", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "021", name: "Berrien", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "025", name: "Calhoun", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "027", name: "Cass", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "037", name: "Clinton", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "045", name: "Eaton", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "049", name: "Genesee", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "055", name: "Grand Traverse", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "065", name: "Ingham", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "067", name: "Ionia", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "073", name: "Isabella", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "075", name: "Jackson", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "077", name: "Kalamazoo", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "081", name: "Kent", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "087", name: "Lapeer", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "091", name: "Lenawee", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "093", name: "Livingston", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "099", name: "Macomb", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "103", name: "Marquette", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "111", name: "Midland", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "115", name: "Monroe", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "117", name: "Montcalm", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "121", name: "Muskegon", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "125", name: "Oakland", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "139", name: "Ottawa", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "145", name: "Saginaw", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "147", name: "St. Clair", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "149", name: "St. Joseph", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "155", name: "Shiawassee", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "157", name: "Tuscola", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "159", name: "Van Buren", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "161", name: "Washtenaw", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
-  { countyfp: "163", name: "Wayne", profile: 'lite', outoforder:"Polling location modeling will be provided for this county soon", datafootnote: "", exceptlayers: [] },
+  { countyfp: "005", name: "Allegan", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "015", name: "Barry", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "017", name: "Bay", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "021", name: "Berrien", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "025", name: "Calhoun", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "027", name: "Cass", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "037", name: "Clinton", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "045", name: "Eaton", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "049", name: "Genesee", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "055", name: "Grand Traverse", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "065", name: "Ingham", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "067", name: "Ionia", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "073", name: "Isabella", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "075", name: "Jackson", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "077", name: "Kalamazoo", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "081", name: "Kent", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "087", name: "Lapeer", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "091", name: "Lenawee", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "093", name: "Livingston", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "099", name: "Macomb", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "103", name: "Marquette", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "111", name: "Midland", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "115", name: "Monroe", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "117", name: "Montcalm", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "121", name: "Muskegon", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "125", name: "Oakland", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "139", name: "Ottawa", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "145", name: "Saginaw", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "147", name: "St. Clair", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "149", name: "St. Joseph", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "155", name: "Shiawassee", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "157", name: "Tuscola", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "159", name: "Van Buren", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "161", name: "Washtenaw", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "163", name: "Wayne", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
 ];
 
 const getParticipatingCountyInfo = function (countyfp) {
@@ -164,7 +164,7 @@ const DATA_LAYERS = {};
 
 DATA_LAYERS.four_day_sites = {
     id: 'four_day_sites',
-    title: "Suggested Areas for 4 Day Vote Centers",
+    title: "Suggested Areas for Election Day Voting Locations",
     csvfile: 'model_files/four_day_sites.csv',
     circle: { radius: 400, opacity: 0.8, color: 'black', weight: 1, fillColor: 'quantile', fillOpacity: 0.8 },
     quantilefield: 'center_score', quantilecolors: SCORING_COLOR_RAMP, breaksource: 'sitescores', // because fillColor == quantile
@@ -174,7 +174,7 @@ DATA_LAYERS.four_day_sites = {
 };
 DATA_LAYERS.eleven_day_sites = {
     id: 'eleven_day_sites',
-    title: "Suggested Areas for 11 Day Vote Centers",
+    title: "Suggested Areas for Early Voting Locations",
     csvfile: 'model_files/eleven_day_sites.csv',
     circle: { radius: 400, opacity: 0.8, color: 'black', weight: 1, fillColor: 'quantile', fillOpacity: 0.8 },
     quantilefield: 'center_score', quantilecolors: SCORING_COLOR_RAMP, breaksource: 'sitescores', // because fillColor == quantile
@@ -204,7 +204,7 @@ DATA_LAYERS.all_sites_scored = {
 };
 DATA_LAYERS.additional_sites_model = {
     id: 'additional_sites_model',
-    title: "Vote Center Options Based on Model",
+    title: "Additional Voting Location Options Based on Model",
     csvfile: 'model_files/additional_sites_model.csv',
     circle: { radius: 400, opacity: 0.8, color: 'blue', weight: 1, fillColor: 'quantile', fillOpacity: 0.8 },
     quantilefield: 'center_score', quantilecolors: SCORING_COLOR_RAMP, breaksource: 'sitescores', // because fillColor == quantile
@@ -214,7 +214,7 @@ DATA_LAYERS.additional_sites_model = {
 };
 DATA_LAYERS.additional_sites_distance = {
     id: 'additional_sites_distance',
-    title: "Additional Vote Center Options Based on Distance",
+    title: "Additional Voting Location Options Based on Distance",
     csvfile: 'model_files/additional_sites_distance.csv',
     circle: { radius: 400, opacity: 0.8, color: 'blue', weight: 1, fillColor: 'quantile', fillOpacity: 0.8 },
     quantilefield: 'center_score', quantilecolors: SCORING_COLOR_RAMP, breaksource: 'sitescores', // because fillColor == quantile
@@ -447,7 +447,7 @@ DATA_PROFILES.fullmodel = {
         DATA_LAYERS.prc_black, DATA_LAYERS.prc_asian, DATA_LAYERS.prc_latino, DATA_LAYERS.prc_white,
     ],
     pointsofinterest: [
-        DATA_LAYERS.pricenter2020,DATA_LAYERS.poi_govish, DATA_LAYERS.poi_misc, DATA_LAYERS.poi,
+        DATA_LAYERS.pripoll2020,DATA_LAYERS.poi_govish, DATA_LAYERS.poi_misc, DATA_LAYERS.poi,
     ],
 };
 
