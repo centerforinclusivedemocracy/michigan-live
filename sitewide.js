@@ -35,7 +35,7 @@ const PARTICIPATING_COUNTIES = [
   { countyfp: "115", name: "Monroe", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "117", name: "Montcalm", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "121", name: "Muskegon", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
-  { countyfp: "125", name: "Oakland", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "125", name: "Oakland", profile: 'lite', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "139", name: "Ottawa", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "145", name: "Saginaw", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "147", name: "St. Clair", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
@@ -44,7 +44,7 @@ const PARTICIPATING_COUNTIES = [
   { countyfp: "157", name: "Tuscola", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "159", name: "Van Buren", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
   { countyfp: "161", name: "Washtenaw", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
-  { countyfp: "163", name: "Wayne", profile: 'fullmodel', outoforder:"", datafootnote: "", exceptlayers: [] },
+  { countyfp: "163", name: "Wayne", profile: 'lite', outoforder:"", datafootnote: "", exceptlayers: [] },
 ];
 
 const getParticipatingCountyInfo = function (countyfp) {
